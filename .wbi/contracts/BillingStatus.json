@@ -1,9 +1,9 @@
 {
   "name": "BillingStatus",
   "kind": "type",
-  "version": 1,
+  "version": 2,
   "providedBy": "TASK-007",
-  "shape": "'active' | 'past_due' | 'canceled'",
+  "shape": "'active' | 'past_due' | 'canceled' | 'paused'",
   "description": "Subscription state shared by API, UI and analytics.",
   "public": false,
   "history": []
