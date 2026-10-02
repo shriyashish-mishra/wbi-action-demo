@@ -1,0 +1,12 @@
+{
+  "id": "analytics-ui",
+  "name": "Analytics UI",
+  "description": "Analytics screens.",
+  "paths": [
+    "src/web/analytics/**"
+  ],
+  "dependsOn": [
+    "analytics-api",
+    "web-shell"
+  ]
+}

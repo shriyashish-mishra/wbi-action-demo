@@ -1,0 +1,49 @@
+{
+  "id": "TASK-005",
+  "title": "Authentication UI",
+  "goal": "Build the authentication screens against the published contracts.",
+  "layer": "frontend",
+  "component": "auth-ui",
+  "requirements": [
+    "REQ-001"
+  ],
+  "dependsOn": [
+    "TASK-004",
+    "TASK-003"
+  ],
+  "allowedPaths": [
+    "src/web/auth/**"
+  ],
+  "restrictedPaths": [
+    "src/api/**",
+    "migrations/**"
+  ],
+  "relevantFiles": [],
+  "provides": [],
+  "consumes": [
+    "Session",
+    "POST /api/auth/login"
+  ],
+  "acceptance": [
+    {
+      "text": "Consumes Session, POST /api/auth/login without redefining types"
+    },
+    {
+      "text": "Loading, empty and error states handled"
+    },
+    {
+      "text": "Tests for this task pass"
+    }
+  ],
+  "risks": [
+    "UI redefining contract types instead of importing them"
+  ],
+  "impact": [],
+  "decisions": [],
+  "effort": 2,
+  "contractVersions": {
+    "POST /api/auth/login": 1,
+    "Session": 1
+  },
+  "createdAt": "2026-10-02T15:11:55Z"
+}

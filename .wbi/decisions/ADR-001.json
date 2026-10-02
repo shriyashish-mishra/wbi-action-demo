@@ -1,0 +1,12 @@
+{
+  "id": "ADR-001",
+  "title": "Contract-first parallel development",
+  "why": "Backend and UI tasks are decoupled by explicit contracts so humans and agents can work in parallel; changing a contract is a tracked event that propagates to consumers.",
+  "status": "accepted",
+  "tasks": [
+    "TASK-004",
+    "TASK-007",
+    "TASK-010"
+  ],
+  "createdAt": "2026-10-02T15:11:55Z"
+}

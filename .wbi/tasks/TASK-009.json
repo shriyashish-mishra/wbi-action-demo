@@ -1,0 +1,44 @@
+{
+  "id": "TASK-009",
+  "title": "Billing end-to-end tests",
+  "goal": "Cover the critical billing path end to end.",
+  "layer": "testing",
+  "component": "billing-api",
+  "requirements": [
+    "REQ-002"
+  ],
+  "dependsOn": [
+    "TASK-007",
+    "TASK-008"
+  ],
+  "allowedPaths": [
+    "tests/billing/**"
+  ],
+  "restrictedPaths": [
+    "src/api/**",
+    "src/web/**"
+  ],
+  "relevantFiles": [],
+  "provides": [],
+  "consumes": [
+    "BillingStatus",
+    "GET /api/billing"
+  ],
+  "acceptance": [
+    {
+      "text": "Critical billing path covered end to end"
+    },
+    {
+      "text": "Tests for this task pass"
+    }
+  ],
+  "risks": [],
+  "impact": [],
+  "decisions": [],
+  "effort": 1,
+  "contractVersions": {
+    "BillingStatus": 1,
+    "GET /api/billing": 1
+  },
+  "createdAt": "2026-10-02T15:11:55Z"
+}

@@ -1,0 +1,10 @@
+{
+  "name": "POST /api/auth/login",
+  "kind": "http",
+  "version": 1,
+  "providedBy": "TASK-004",
+  "shape": "body { email, password } → 200 { session: Session } | 401",
+  "description": "Credential login.",
+  "public": true,
+  "history": []
+}

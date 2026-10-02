@@ -1,0 +1,10 @@
+{
+  "id": "REQ-001",
+  "text": "Users can sign up, sign in and sign out securely",
+  "layers": [
+    "database",
+    "backend",
+    "frontend",
+    "testing"
+  ]
+}

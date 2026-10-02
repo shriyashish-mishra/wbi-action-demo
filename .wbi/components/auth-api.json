@@ -1,0 +1,11 @@
+{
+  "id": "auth-api",
+  "name": "Authentication API",
+  "description": "Authentication backend.",
+  "paths": [
+    "src/api/auth/**"
+  ],
+  "dependsOn": [
+    "database"
+  ]
+}

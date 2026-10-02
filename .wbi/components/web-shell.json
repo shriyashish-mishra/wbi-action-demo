@@ -1,0 +1,12 @@
+{
+  "id": "web-shell",
+  "name": "Web shell",
+  "description": "App layout, routing, shared UI components.",
+  "paths": [
+    "src/web/shell/**",
+    "src/web/components/**"
+  ],
+  "dependsOn": [
+    "platform"
+  ]
+}

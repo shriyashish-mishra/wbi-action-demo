@@ -1,0 +1,10 @@
+{
+  "name": "Session",
+  "kind": "type",
+  "version": 1,
+  "providedBy": "TASK-004",
+  "shape": "{ userId: string; tenantId: string; expiresAt: string }",
+  "description": "The authenticated session every other feature reads.",
+  "public": false,
+  "history": []
+}

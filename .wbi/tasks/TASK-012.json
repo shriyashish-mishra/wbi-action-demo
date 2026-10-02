@@ -1,0 +1,44 @@
+{
+  "id": "TASK-012",
+  "title": "Analytics end-to-end tests",
+  "goal": "Cover the critical analytics path end to end.",
+  "layer": "testing",
+  "component": "analytics-api",
+  "requirements": [
+    "REQ-003"
+  ],
+  "dependsOn": [
+    "TASK-010",
+    "TASK-011"
+  ],
+  "allowedPaths": [
+    "tests/analytics/**"
+  ],
+  "restrictedPaths": [
+    "src/api/**",
+    "src/web/**"
+  ],
+  "relevantFiles": [],
+  "provides": [],
+  "consumes": [
+    "AnalyticsEvent",
+    "GET /api/analytics/summary"
+  ],
+  "acceptance": [
+    {
+      "text": "Critical analytics path covered end to end"
+    },
+    {
+      "text": "Tests for this task pass"
+    }
+  ],
+  "risks": [],
+  "impact": [],
+  "decisions": [],
+  "effort": 1,
+  "contractVersions": {
+    "AnalyticsEvent": 1,
+    "GET /api/analytics/summary": 1
+  },
+  "createdAt": "2026-10-02T15:11:55Z"
+}

@@ -1,0 +1,12 @@
+{
+  "id": "auth-ui",
+  "name": "Authentication UI",
+  "description": "Authentication screens.",
+  "paths": [
+    "src/web/auth/**"
+  ],
+  "dependsOn": [
+    "auth-api",
+    "web-shell"
+  ]
+}

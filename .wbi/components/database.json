@@ -1,0 +1,12 @@
+{
+  "id": "database",
+  "name": "Database",
+  "description": "Schema and migrations.",
+  "paths": [
+    "src/db/**",
+    "migrations/**"
+  ],
+  "dependsOn": [
+    "platform"
+  ]
+}

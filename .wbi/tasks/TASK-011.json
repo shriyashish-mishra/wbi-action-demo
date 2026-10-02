@@ -1,0 +1,51 @@
+{
+  "id": "TASK-011",
+  "title": "Analytics UI",
+  "goal": "Build the analytics screens against the published contracts.",
+  "layer": "frontend",
+  "component": "analytics-ui",
+  "requirements": [
+    "REQ-003"
+  ],
+  "dependsOn": [
+    "TASK-010",
+    "TASK-003"
+  ],
+  "allowedPaths": [
+    "src/web/analytics/**"
+  ],
+  "restrictedPaths": [
+    "src/api/**",
+    "migrations/**"
+  ],
+  "relevantFiles": [],
+  "provides": [],
+  "consumes": [
+    "AnalyticsEvent",
+    "GET /api/analytics/summary",
+    "Session"
+  ],
+  "acceptance": [
+    {
+      "text": "Consumes AnalyticsEvent, GET /api/analytics/summary without redefining types"
+    },
+    {
+      "text": "Loading, empty and error states handled"
+    },
+    {
+      "text": "Tests for this task pass"
+    }
+  ],
+  "risks": [
+    "UI redefining contract types instead of importing them"
+  ],
+  "impact": [],
+  "decisions": [],
+  "effort": 2,
+  "contractVersions": {
+    "AnalyticsEvent": 1,
+    "GET /api/analytics/summary": 1,
+    "Session": 1
+  },
+  "createdAt": "2026-10-02T15:11:55Z"
+}

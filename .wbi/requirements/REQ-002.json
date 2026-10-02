@@ -1,0 +1,10 @@
+{
+  "id": "REQ-002",
+  "text": "Customers can subscribe, see their plan and cancel",
+  "layers": [
+    "database",
+    "backend",
+    "frontend",
+    "testing"
+  ]
+}

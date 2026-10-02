@@ -1,0 +1,8 @@
+{
+  "id": "ADR-002",
+  "title": "Stack to be chosen in the architecture task",
+  "why": "No framework was detected in the repository.",
+  "status": "proposed",
+  "tasks": [],
+  "createdAt": "2026-10-02T15:11:55Z"
+}

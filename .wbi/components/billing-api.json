@@ -1,0 +1,12 @@
+{
+  "id": "billing-api",
+  "name": "Billing API",
+  "description": "Billing backend.",
+  "paths": [
+    "src/api/billing/**"
+  ],
+  "dependsOn": [
+    "database",
+    "auth-api"
+  ]
+}

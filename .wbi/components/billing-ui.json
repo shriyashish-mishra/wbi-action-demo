@@ -1,0 +1,12 @@
+{
+  "id": "billing-ui",
+  "name": "Billing UI",
+  "description": "Billing screens.",
+  "paths": [
+    "src/web/billing/**"
+  ],
+  "dependsOn": [
+    "billing-api",
+    "web-shell"
+  ]
+}

@@ -1,0 +1,59 @@
+{
+  "id": "TASK-007",
+  "title": "Billing API",
+  "goal": "Implement the billing backend and the contracts other tasks build on.",
+  "layer": "backend",
+  "component": "billing-api",
+  "requirements": [
+    "REQ-002"
+  ],
+  "dependsOn": [
+    "TASK-002",
+    "TASK-004"
+  ],
+  "allowedPaths": [
+    "src/api/billing/**"
+  ],
+  "restrictedPaths": [
+    "migrations/**",
+    "src/web/**",
+    "src/api/auth/**"
+  ],
+  "relevantFiles": [],
+  "provides": [
+    "BillingStatus",
+    "GET /api/billing"
+  ],
+  "consumes": [
+    "Session"
+  ],
+  "acceptance": [
+    {
+      "text": "Implements BillingStatus and GET /api/billing exactly as specified in .wbi/contracts"
+    },
+    {
+      "text": "Validation and error responses handled for every endpoint"
+    },
+    {
+      "text": "Tests for this task pass"
+    }
+  ],
+  "risks": [
+    "Money handling: idempotency keys and webhook retries",
+    "Status enum changes break every consumer"
+  ],
+  "impact": [
+    "security",
+    "public-api"
+  ],
+  "decisions": [
+    "ADR-001"
+  ],
+  "effort": 3,
+  "contractVersions": {
+    "BillingStatus": 1,
+    "GET /api/billing": 1,
+    "Session": 1
+  },
+  "createdAt": "2026-10-02T15:11:55Z"
+}

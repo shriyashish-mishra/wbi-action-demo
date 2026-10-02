@@ -1,0 +1,41 @@
+{
+  "id": "TASK-013",
+  "title": "Integration tests",
+  "goal": "Verify all features work together in a clean environment.",
+  "layer": "integration",
+  "component": "integration",
+  "requirements": [
+    "REQ-001",
+    "REQ-002",
+    "REQ-003"
+  ],
+  "dependsOn": [
+    "TASK-006",
+    "TASK-009",
+    "TASK-012"
+  ],
+  "allowedPaths": [
+    "tests/e2e/**"
+  ],
+  "restrictedPaths": [
+    "src/api/**",
+    "src/web/**"
+  ],
+  "relevantFiles": [],
+  "provides": [],
+  "consumes": [],
+  "acceptance": [
+    {
+      "text": "Full flow passes from a clean checkout"
+    },
+    {
+      "text": "Tests for this task pass"
+    }
+  ],
+  "risks": [],
+  "impact": [],
+  "decisions": [],
+  "effort": 2,
+  "contractVersions": {},
+  "createdAt": "2026-10-02T15:11:55Z"
+}

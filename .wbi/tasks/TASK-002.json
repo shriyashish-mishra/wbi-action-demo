@@ -1,0 +1,41 @@
+{
+  "id": "TASK-002",
+  "title": "Database schema \u0026 migrations",
+  "goal": "Design and migrate the schema for: Authentication, Billing, Analytics.",
+  "layer": "database",
+  "component": "database",
+  "requirements": [
+    "REQ-001",
+    "REQ-002",
+    "REQ-003"
+  ],
+  "dependsOn": [
+    "TASK-001"
+  ],
+  "allowedPaths": [
+    "src/db/**",
+    "migrations/**"
+  ],
+  "restrictedPaths": [],
+  "relevantFiles": [],
+  "provides": [],
+  "consumes": [],
+  "acceptance": [
+    {
+      "text": "Schema covers every entity needed by the listed requirements"
+    },
+    {
+      "text": "Migration applies cleanly on an empty database and is reversible"
+    }
+  ],
+  "risks": [
+    "Migrations are hard to reverse once shared"
+  ],
+  "impact": [
+    "migration"
+  ],
+  "decisions": [],
+  "effort": 3,
+  "contractVersions": {},
+  "createdAt": "2026-10-02T15:11:55Z"
+}

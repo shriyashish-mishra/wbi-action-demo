@@ -1,0 +1,44 @@
+{
+  "id": "TASK-006",
+  "title": "Authentication end-to-end tests",
+  "goal": "Cover the critical authentication path end to end.",
+  "layer": "testing",
+  "component": "auth-api",
+  "requirements": [
+    "REQ-001"
+  ],
+  "dependsOn": [
+    "TASK-004",
+    "TASK-005"
+  ],
+  "allowedPaths": [
+    "tests/auth/**"
+  ],
+  "restrictedPaths": [
+    "src/api/**",
+    "src/web/**"
+  ],
+  "relevantFiles": [],
+  "provides": [],
+  "consumes": [
+    "Session",
+    "POST /api/auth/login"
+  ],
+  "acceptance": [
+    {
+      "text": "Critical authentication path covered end to end"
+    },
+    {
+      "text": "Tests for this task pass"
+    }
+  ],
+  "risks": [],
+  "impact": [],
+  "decisions": [],
+  "effort": 1,
+  "contractVersions": {
+    "POST /api/auth/login": 1,
+    "Session": 1
+  },
+  "createdAt": "2026-10-02T15:11:55Z"
+}

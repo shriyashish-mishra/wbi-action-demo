@@ -1,0 +1,10 @@
+{
+  "name": "AnalyticsEvent",
+  "kind": "event",
+  "version": 1,
+  "providedBy": "TASK-010",
+  "shape": "{ name: string; tenantId: string; at: string; props: Record\u003cstring, unknown\u003e }",
+  "description": "Event emitted by features, consumed by analytics.",
+  "public": false,
+  "history": []
+}

@@ -1,0 +1,10 @@
+{
+  "name": "GET /api/analytics/summary",
+  "kind": "http",
+  "version": 1,
+  "providedBy": "TASK-010",
+  "shape": "→ 200 { series: { day: string; count: number }[] }",
+  "description": "Aggregated usage for charts.",
+  "public": true,
+  "history": []
+}

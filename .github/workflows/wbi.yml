@@ -1,0 +1,12 @@
+name: wbi
+on: [pull_request]
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v7
+        with: { fetch-depth: 0 }
+      - uses: shriyashish-mishra/who-broke-it@v0.1.1
+        with:
+          require-handoff: true
+          require-approval: true

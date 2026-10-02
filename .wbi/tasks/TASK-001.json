@@ -1,0 +1,42 @@
+{
+  "id": "TASK-001",
+  "title": "Architecture \u0026 contracts",
+  "goal": "Review the generated plan, finalize contracts and the constitution so parallel work can start.",
+  "layer": "architecture",
+  "component": "platform",
+  "requirements": [
+    "REQ-001",
+    "REQ-002",
+    "REQ-003"
+  ],
+  "dependsOn": [],
+  "allowedPaths": [
+    ".wbi/**",
+    "docs/**"
+  ],
+  "restrictedPaths": [],
+  "relevantFiles": [],
+  "provides": [],
+  "consumes": [],
+  "acceptance": [
+    {
+      "text": "Every contract in .wbi/contracts reviewed by its provider and consumers",
+      "human": true
+    },
+    {
+      "text": "Constitution rules agreed by the team",
+      "human": true
+    }
+  ],
+  "risks": [
+    "Skipping this review is how parallel agents diverge"
+  ],
+  "impact": [],
+  "decisions": [
+    "ADR-001",
+    "ADR-002"
+  ],
+  "effort": 1,
+  "contractVersions": {},
+  "createdAt": "2026-10-02T15:11:55Z"
+}

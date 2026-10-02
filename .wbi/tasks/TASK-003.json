@@ -1,0 +1,40 @@
+{
+  "id": "TASK-003",
+  "title": "Web app shell",
+  "goal": "App layout, routing, design system and an authenticated-route wrapper that features plug into.",
+  "layer": "frontend",
+  "component": "web-shell",
+  "requirements": [
+    "REQ-001",
+    "REQ-002",
+    "REQ-003"
+  ],
+  "dependsOn": [
+    "TASK-001"
+  ],
+  "allowedPaths": [
+    "src/web/shell/**",
+    "src/web/components/**"
+  ],
+  "restrictedPaths": [
+    "src/api/**",
+    "migrations/**"
+  ],
+  "relevantFiles": [],
+  "provides": [],
+  "consumes": [],
+  "acceptance": [
+    {
+      "text": "Shell renders with navigation placeholders for each feature"
+    },
+    {
+      "text": "Tests for this task pass"
+    }
+  ],
+  "risks": [],
+  "impact": [],
+  "decisions": [],
+  "effort": 2,
+  "contractVersions": {},
+  "createdAt": "2026-10-02T15:11:55Z"
+}

@@ -1,0 +1,10 @@
+{
+  "id": "REQ-003",
+  "text": "Admins can see usage analytics for their tenant",
+  "layers": [
+    "database",
+    "backend",
+    "frontend",
+    "testing"
+  ]
+}

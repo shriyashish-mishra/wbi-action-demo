@@ -1,0 +1,12 @@
+{
+  "id": "analytics-api",
+  "name": "Analytics API",
+  "description": "Analytics backend.",
+  "paths": [
+    "src/api/analytics/**"
+  ],
+  "dependsOn": [
+    "database",
+    "auth-api"
+  ]
+}

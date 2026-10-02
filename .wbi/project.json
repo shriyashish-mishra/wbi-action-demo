@@ -1,0 +1,7 @@
+{
+  "version": 1,
+  "name": "actiondemo",
+  "goal": "Build a SaaS app with authentication, billing and analytics",
+  "createdAt": "2026-10-02T15:11:55Z",
+  "baseBranch": "main"
+}

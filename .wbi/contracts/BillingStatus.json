@@ -1,0 +1,10 @@
+{
+  "name": "BillingStatus",
+  "kind": "type",
+  "version": 1,
+  "providedBy": "TASK-007",
+  "shape": "'active' | 'past_due' | 'canceled'",
+  "description": "Subscription state shared by API, UI and analytics.",
+  "public": false,
+  "history": []
+}

@@ -1,0 +1,10 @@
+{
+  "name": "GET /api/billing",
+  "kind": "http",
+  "version": 1,
+  "providedBy": "TASK-007",
+  "shape": "→ 200 { status: BillingStatus; plan: string; renewsAt: string }",
+  "description": "Current subscription for the session tenant.",
+  "public": true,
+  "history": []
+}

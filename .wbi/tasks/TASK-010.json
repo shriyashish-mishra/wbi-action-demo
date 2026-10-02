@@ -1,0 +1,56 @@
+{
+  "id": "TASK-010",
+  "title": "Analytics API",
+  "goal": "Implement the analytics backend and the contracts other tasks build on.",
+  "layer": "backend",
+  "component": "analytics-api",
+  "requirements": [
+    "REQ-003"
+  ],
+  "dependsOn": [
+    "TASK-002",
+    "TASK-004"
+  ],
+  "allowedPaths": [
+    "src/api/analytics/**"
+  ],
+  "restrictedPaths": [
+    "migrations/**",
+    "src/web/**",
+    "src/api/auth/**"
+  ],
+  "relevantFiles": [],
+  "provides": [
+    "AnalyticsEvent",
+    "GET /api/analytics/summary"
+  ],
+  "consumes": [
+    "Session"
+  ],
+  "acceptance": [
+    {
+      "text": "Implements AnalyticsEvent and GET /api/analytics/summary exactly as specified in .wbi/contracts"
+    },
+    {
+      "text": "Validation and error responses handled for every endpoint"
+    },
+    {
+      "text": "Tests for this task pass"
+    }
+  ],
+  "risks": [
+    "PII leaking into event properties",
+    "Unbounded aggregation queries"
+  ],
+  "impact": [],
+  "decisions": [
+    "ADR-001"
+  ],
+  "effort": 3,
+  "contractVersions": {
+    "AnalyticsEvent": 1,
+    "GET /api/analytics/summary": 1,
+    "Session": 1
+  },
+  "createdAt": "2026-10-02T15:11:55Z"
+}

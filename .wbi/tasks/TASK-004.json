@@ -1,0 +1,54 @@
+{
+  "id": "TASK-004",
+  "title": "Authentication API",
+  "goal": "Implement the authentication backend and the contracts other tasks build on.",
+  "layer": "backend",
+  "component": "auth-api",
+  "requirements": [
+    "REQ-001"
+  ],
+  "dependsOn": [
+    "TASK-002"
+  ],
+  "allowedPaths": [
+    "src/api/auth/**"
+  ],
+  "restrictedPaths": [
+    "migrations/**",
+    "src/web/**"
+  ],
+  "relevantFiles": [],
+  "provides": [
+    "Session",
+    "POST /api/auth/login"
+  ],
+  "consumes": [],
+  "acceptance": [
+    {
+      "text": "Implements Session and POST /api/auth/login exactly as specified in .wbi/contracts"
+    },
+    {
+      "text": "Validation and error responses handled for every endpoint"
+    },
+    {
+      "text": "Tests for this task pass"
+    }
+  ],
+  "risks": [
+    "Session fixation and token storage mistakes",
+    "Every other feature depends on Session, so changes here ripple widely"
+  ],
+  "impact": [
+    "security",
+    "public-api"
+  ],
+  "decisions": [
+    "ADR-001"
+  ],
+  "effort": 3,
+  "contractVersions": {
+    "POST /api/auth/login": 1,
+    "Session": 1
+  },
+  "createdAt": "2026-10-02T15:11:55Z"
+}

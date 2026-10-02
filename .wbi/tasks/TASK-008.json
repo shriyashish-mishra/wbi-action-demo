@@ -1,0 +1,51 @@
+{
+  "id": "TASK-008",
+  "title": "Billing UI",
+  "goal": "Build the billing screens against the published contracts.",
+  "layer": "frontend",
+  "component": "billing-ui",
+  "requirements": [
+    "REQ-002"
+  ],
+  "dependsOn": [
+    "TASK-007",
+    "TASK-003"
+  ],
+  "allowedPaths": [
+    "src/web/billing/**"
+  ],
+  "restrictedPaths": [
+    "src/api/**",
+    "migrations/**"
+  ],
+  "relevantFiles": [],
+  "provides": [],
+  "consumes": [
+    "BillingStatus",
+    "GET /api/billing",
+    "Session"
+  ],
+  "acceptance": [
+    {
+      "text": "Consumes BillingStatus, GET /api/billing without redefining types"
+    },
+    {
+      "text": "Loading, empty and error states handled"
+    },
+    {
+      "text": "Tests for this task pass"
+    }
+  ],
+  "risks": [
+    "UI redefining contract types instead of importing them"
+  ],
+  "impact": [],
+  "decisions": [],
+  "effort": 2,
+  "contractVersions": {
+    "BillingStatus": 1,
+    "GET /api/billing": 1,
+    "Session": 1
+  },
+  "createdAt": "2026-10-02T15:11:55Z"
+}

@@ -1,0 +1,13 @@
+{
+  "id": "integration",
+  "name": "Integration",
+  "description": "Cross-feature verification.",
+  "paths": [
+    "tests/e2e/**"
+  ],
+  "dependsOn": [
+    "auth-api",
+    "billing-api",
+    "analytics-api"
+  ]
+}
